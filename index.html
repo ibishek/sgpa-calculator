@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="icon" type="image/svg+xml" href="/sgpa-calculator/assets/favicon.ad5e2e29.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This small application utilizes the grading system opted by Purbachal University. It uses the latest grading system used by the university after the 2016 batch."
+    />
+    <meta
+      name="keywords"
+      content="sgpa, purbanchal university, semester end grade point average, pu calculate sgpa, sgpa calculator for purbanchal university"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Abhishek Rijal" />
+    <title>SGPA Calculator</title>
+    <script type="module" crossorigin src="/sgpa-calculator/assets/index.be08a99c.js"></script>
+    <link rel="stylesheet" href="/sgpa-calculator/assets/index.5722e551.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>SGPA Calculator</h1>
+      <h4>The missing SGPA calculator for Purbanchal University.</h4>
+      <hr />
+      <form
+        action=""
+        onclick="event.preventDefault();"
+        class="form"
+        autocomplete="off"
+      >
+        <div class="form-group">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter subject name for identification"
+          />
+          <input
+            type="text"
+            name="credit"
+            id="credit"
+            placeholder="Enter credit hour*"
+          />
+          <select name="grade" id="grade" class="form-select">
+            <option value="" selected="selected" disabled="disabled">
+              Select Your Grade*
+            </option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter subject name for identification"
+          />
+          <input
+            type="text"
+            name="credit"
+            id="credit"
+            placeholder="Enter credit hour*"
+          />
+          <select name="grade" id="grade" class="form-select">
+            <option value="" selected="selected" disabled="disabled">
+              Select Your Grade*
+            </option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Enter subject name for identification"
+          />
+          <input
+            type="text"
+            name="credit"
+            id="credit"
+            placeholder="Enter credit hour*"
+          />
+          <select name="grade" id="grade" class="form-select">
+            <option value="" selected="selected" disabled="disabled">
+              Select Your Grade*
+            </option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+          </select>
+        </div>
+      </form>
+      <div class="buttons-group">
+        <button type="button" class="button add-new">Add New Subject</button>
+        <button type="button" class="button calculate">Calculate</button>
+      </div>
+    </div>
+    <div class="container mt-10 response hidden">
+      <div class="when-success hidden">
+        <h1 class="success-heading">Your Details</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>S.N.</th>
+              <th>Subjects</th>
+              <th>Credit Hour</th>
+              <th>Letter Grades</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total Credit Hours:</td>
+              <td colspan="2">0</td>
+            </tr>
+          </tfoot>
+        </table>
+        <h2><strong>SGPA:</strong> <span class="sgpa"></span></h2>
+      </div>
+      <div class="when-error hidden">
+        <h1 class="error">Error</h1>
+        There has been an error encountered during execution. Please follow the
+        following suggestions.
+        <ol>
+          <li>The only numeric value is accepted in credit hours.</li>
+          <li>Please, remove the excessive input element(s).</li>
+        </ol>
+      </div>
+    </div>
+    <footer>
+      Developed by
+      <a href="https://abhishekrijal.com.np" target="_blank">Abhishek Rijal</a>
+    </footer>
+    
+  </body>
+</html>
