@@ -5,7 +5,7 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="icon" type="image/svg+xml" href="/sgpa-calculator/assets/favicon.ad5e2e29.svg" />
+    <link rel="icon" type="image/svg+xml" href="/sgpa-calculator/assets/favicon-ad5e2e29.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -19,15 +19,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="author" content="Abhishek Rijal" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>SGPA Calculator</title>
-    <script type="module" crossorigin src="/sgpa-calculator/assets/index.be08a99c.js"></script>
-    <link rel="stylesheet" href="/sgpa-calculator/assets/index.5722e551.css">
+    <script type="module" crossorigin src="/sgpa-calculator/assets/index-89bc99a9.js"></script>
+    <link rel="stylesheet" href="/sgpa-calculator/assets/index-286bec51.css">
   </head>
   <body>
     <div class="container">
       <h1>SGPA Calculator</h1>
       <h4>The missing SGPA calculator for Purbanchal University.</h4>
-      <hr />
       <form
         action=""
         onclick="event.preventDefault();"
@@ -39,13 +44,14 @@
             type="text"
             name="subject"
             id="subject"
-            placeholder="Enter subject name for identification"
+            placeholder="Subject"
+            inputmode="numeric"
           />
           <input
             type="text"
             name="credit"
             id="credit"
-            placeholder="Enter credit hour*"
+            placeholder="Credit hours*"
           />
           <select name="grade" id="grade" class="form-select">
             <option value="" selected="selected" disabled="disabled">
@@ -65,13 +71,14 @@
             type="text"
             name="subject"
             id="subject"
-            placeholder="Enter subject name for identification"
+            placeholder="Subject"
           />
           <input
             type="text"
             name="credit"
             id="credit"
-            placeholder="Enter credit hour*"
+            placeholder="Credit hours*"
+            inputmode="numeric"
           />
           <select name="grade" id="grade" class="form-select">
             <option value="" selected="selected" disabled="disabled">
@@ -91,13 +98,14 @@
             type="text"
             name="subject"
             id="subject"
-            placeholder="Enter subject name for identification"
+            placeholder="Subject"
           />
           <input
             type="text"
             name="credit"
             id="credit"
-            placeholder="Enter credit hour*"
+            placeholder="Credit hours*"
+            inputmode="numeric"
           />
           <select name="grade" id="grade" class="form-select">
             <option value="" selected="selected" disabled="disabled">
@@ -118,7 +126,7 @@
         <button type="button" class="button calculate">Calculate</button>
       </div>
     </div>
-    <div class="container mt-10 response hidden">
+    <div class="container response hidden">
       <div class="when-success hidden">
         <h1 class="success-heading">Your Details</h1>
         <table>
@@ -141,9 +149,11 @@
         <h2><strong>SGPA:</strong> <span class="sgpa"></span></h2>
       </div>
       <div class="when-error hidden">
-        <h1 class="error">Error</h1>
-        There has been an error encountered during execution. Please follow the
-        following suggestions.
+        <h1>Error</h1>
+        <p>
+          There has been an error encountered during execution. Please follow
+          the following suggestions.
+        </p>
         <ol>
           <li>The only numeric value is accepted in credit hours.</li>
           <li>Please, remove the excessive input element(s).</li>
