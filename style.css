@@ -1,9 +1,5 @@
 body {
-  background: linear-gradient(
-    90deg,
-    rgb(34 207 165) 0%,
-    rgba(255, 0, 206, 1) 100%
-  );
+  background: linear-gradient(90deg, #2d178d 0%, #145699 100%);
   font-family: "DM Sans", sans-serif;
   margin: 0;
 }
@@ -212,7 +208,7 @@ footer a {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(255, 0, 206, 1);
+  background: #2d178d;
 }
 
 ::-webkit-scrollbar-thumb {
